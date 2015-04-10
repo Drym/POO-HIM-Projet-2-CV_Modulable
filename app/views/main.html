@@ -22,8 +22,6 @@
      <li><a href="#exp">Expériences professionnelles</a></li>
      <li><a href="#comp">Compétences professionnelles</a></li>
      <li><a href="#centre">Centres d'intérêt</a></li>
-
-
     </ul>
   </nav>
 </div>
@@ -64,19 +62,17 @@
       <h1>Compétences professionnelles</h1>
       <img alt="encoche" id="encoche1" src="images/encoche.png">
       <h2>Informatique</h2>
+
       <p id="informatique">
-      <ul ng-repeat="infox in project.comp[0].info">
-
-        <li>{{infox}}</li>
-
-      </ul>
+        <ul ng-repeat="infox in project.comp[0].info">
+           <li>{{infox}}</li>
+         </ul>
       </p>
 
       <img alt="encoche" id="encoche2" src="images/encoche.png">
       <h2>Réseaux</h2>
       <p id="reseau">
         <ul ng-repeat="infox in project.comp[1].info">
-
            <li>{{infox}}</li>
         </ul>
       </p>
@@ -84,17 +80,17 @@
       <img alt="encoche" id="encoche3" src="images/encoche.png">
       <h2>Langue</h2>
       <p id ="langue">
-      <ul ng-repeat="infox in project.comp[2].info">
-        <li>{{infox}}</li>
-      </ul>
+        <ul ng-repeat="infox in project.comp[2].info">
+          <li>{{infox}}</li>
+        </ul>
       </p>
     </div>
 
     <div id="centre">
       <h1>Centres d'intérêt</h1>
-      <p>
-      {{project.interet[0].jeux}}<br><br>
-      {{project.interet[0].sport}}<br>
+      <p ng-repeat = "infox in project.interet">
+        {{infox.title}}
+        {{infox.content}}
       </p>
     </div>
   </div>

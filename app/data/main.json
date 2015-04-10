@@ -53,8 +53,12 @@
   ],
   "interet": [
     {
-      "jeux" : "Jeux vidéo en tout genre : stratégie et réflexion, jeux de tir, jeux de rôle, jeux en équipe",
-      "sport" : "Sport : pratique du tennis, de la natation, de la randonnée et du ski alpin"
+      "title": "Jeux vidéo en tout genre : ",
+      "content": "stratégie et réflexion, jeux de tir, jeux de rôle, jeux en équipe"
+    },
+    {
+      "title": "Sport : ",
+      "content": "pratique du tennis, de la natation, de la randonnée et du ski alpin"
     }
   ]
 
