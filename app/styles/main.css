@@ -1,0 +1,160 @@
+
+/* Menu */
+
+div#menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+div#menu ul,div#menu li {
+  list-style-type: none;
+}
+
+div#menu nav {
+  height:45px;
+  background: #95AEBD;
+}
+
+div#menu nav>ul {
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 45px;
+}
+
+div#menu nav>ul>li {
+  float:left;
+  height:45px;
+  padding-top: 10px;
+}
+
+div#menu nav>ul li a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+div#menu nav>ul li:nth-child(1), div#menu nav>ul li:nth-child(3), div#menu nav>ul li:nth-child(5) {
+  box-shadow: -2px 0px 2px -2px #525F67, 2px 0px 2px -2px #525F67;
+}
+
+
+div#menu nav>ul>li>a.over,
+div#menu nav>ul>li>a:hover {
+  background-color:#7BAFD2;
+  box-shadow: -2px 0px 2px -2px #525F67;
+
+}
+
+/* Content */
+
+a:hover, a:focus, a {
+  color: #092C89;
+}
+
+img#encoche1, img#encoche2, img#encoche3 {
+  width: 25px;
+}
+
+img#encoche1{
+  position: absolute;
+  margin-top: 5px;
+}
+
+img#encoche2, img#encoche3{
+  position: absolute;
+  margin-top: 15px;
+}
+
+div#comp h2 {
+  margin-left: 32px;
+}
+
+li {
+  font-size: 16px;
+}
+
+p#adresse {
+  position: absolute;
+  left: 440px;
+  top: 215px;
+}
+
+ul#travail {
+  margin-left: 115px;
+}
+
+ul.ng-scope {
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+}
+
+img#lucas {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
+h2#name {
+  padding-top: 20px;
+  margin-top: 0px;
+}
+
+h2#poste {
+  position: absolute;
+  left: 520px;
+  top: 85px;
+}
+
+
+h1, h2, h3 {
+  color: #092C89;
+}
+
+h1 {
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  margin-top: 0px;
+}
+
+#content {
+  width: 1000px;
+  padding: 0px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px;
+}
+
+#homepageContent {
+  position: relative;
+  width: 1000px;
+  margin-bottom: 100px;
+  text-align: justify;
+  padding-top: 60px;
+}
+
+
+/* Footer */
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background-color: #95AEBD;
+  height: 80px;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+}

@@ -1,0 +1,61 @@
+{
+  "personne": [
+    {
+      "nom": "SAUVAGE Lucas",
+      "poste": "Ingénieur en informatique",
+      "adresse": "78 chemin des alvéoles, 06000 Nice",
+      "tel": "06 31 13 34 13",
+      "mail": "lucas.sauvage.06@orange.fr",
+      "date": "Né le 09/12/1994 à Cannes"
+    }
+  ],
+  "formation": [
+    {
+      "info": ["2014-2015 : Préparation au diplôme d’ingénieur en informatique à Polytech Nice-Sophia",
+        "Juin 2014 : DUT Réseaux et télécommunications à l'IUT Nice Côte-d'Azur",
+        "Juin 2012 : Baccalauréat Scientifique option SVT spécialité Mathématiques avec mention au Lycée Fénelon à Grasse"
+        ]
+    }
+  ],
+  "exp": [
+    {
+      "date" : "Avril - Juin 2014",
+      "lieu" : "Stagiaire – Apiwork, Cannes",
+      "info": ["Réalisation de sites internet sur gabarits",
+        "Réalisation de passerelles immobilières en PHP 5 objet"
+        ]
+    }
+  ],
+  "comp": [
+    {
+      "type": "informatique",
+      "info": ["Langage C et base de donnée",
+        "Programmation orientée objet : Java",
+        "Application client-serveur et web : langage HTML, CSS, PHP et MySQL",
+        "Algorithmique avancée","Architecture des machines informatiques"]
+    },
+    {
+      "type": "réseaux",
+      "info": ["Réseaux locaux : câblage, déploiement et dépannage",
+        "Administration des systèmes d’exploitation réseaux",
+        "Technologies de l’Internet",
+        "Réseaux étendus et réseaux d’opérateur",
+        "Sécurité avancée des réseaux",
+        "Administration et supervision des réseaux"
+      ]
+    },
+    {
+      "type" : "Langue",
+      "info": [ "Anglais : lu, parlé, écrit",
+        "Espagnol : acquisition des notions de base"
+      ]
+    }
+  ],
+  "interet": [
+    {
+      "jeux" : "Jeux vidéo en tout genre : stratégie et réflexion, jeux de tir, jeux de rôle, jeux en équipe",
+      "sport" : "Sport : pratique du tennis, de la natation, de la randonnée et du ski alpin"
+    }
+  ]
+
+}

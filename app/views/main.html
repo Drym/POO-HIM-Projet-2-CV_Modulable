@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="UTF-8">
+    <title>CV</title>
+
+  <script src="scripts/MyScripts/jquery.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="scripts/MyScripts/jquery.localscroll.js"></script>
+  <script type="text/javascript" src="scripts/MyScripts/jquery.scrollTo.js"></script>
+
+  <script type="text/javascript" src="scripts/MyScripts/lancement.js"></script>
+
+</head>
+
+<body>
+<div id="menu">
+  <nav>
+    <ul>
+     <li><a href="#homepageContent">Accueil</a></li>
+     <li><a href="#formation">Formation</a></li>
+     <li><a href="#exp">Expériences professionnelles</a></li>
+     <li><a href="#comp">Compétences professionnelles</a></li>
+     <li><a href="#centre">Centres d'intérêt</a></li>
+
+
+    </ul>
+  </nav>
+</div>
+<div id="content">
+  <div id="homepageContent">
+    <div id="info">
+
+      <h2 id="name">{{project.personne[0].nom}}</h2>
+      <img alt="Lucas" id="lucas" src="images/lucas.jpg">
+      <h2 id="poste">{{project.personne[0].poste}}</h2>
+      <p id ="adresse">
+        {{project.personne[0].adresse}}<br>
+        {{project.personne[0].tel}}<br>
+        <a href="mailto:lucas.sauvage.06@orange.fr">{{project.personne[0].mail}}</a><br>
+        {{project.personne[0].date}}<br>
+      </p>
+    </div>
+
+    <div id="formation">
+      <h1>Formation</h1>
+      <p ng-repeat="infox in project.formation[0].info">
+        {{infox}}
+      </p>
+    </div>
+
+    <div id="exp">
+      <h1>Expériences professionnelles</h1>
+      <p>
+      {{project.exp[0].date}}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      {{project.exp[0].lieu}}
+        <ul id="travail" ng-repeat="infox in project.exp[0].info">
+          <li>{{infox}}</li>
+        </ul>
+      </p>
+    </div>
+
+    <div id="comp">
+      <h1>Compétences professionnelles</h1>
+      <img alt="encoche" id="encoche1" src="images/encoche.png">
+      <h2>Informatique</h2>
+      <p id="informatique">
+      <ul ng-repeat="infox in project.comp[0].info">
+
+        <li>{{infox}}</li>
+
+      </ul>
+      </p>
+
+      <img alt="encoche" id="encoche2" src="images/encoche.png">
+      <h2>Réseaux</h2>
+      <p id="reseau">
+        <ul ng-repeat="infox in project.comp[1].info">
+
+           <li>{{infox}}</li>
+        </ul>
+      </p>
+
+      <img alt="encoche" id="encoche3" src="images/encoche.png">
+      <h2>Langue</h2>
+      <p id ="langue">
+      <ul ng-repeat="infox in project.comp[2].info">
+        <li>{{infox}}</li>
+      </ul>
+      </p>
+    </div>
+
+    <div id="centre">
+      <h1>Centres d'intérêt</h1>
+      <p>
+      {{project.interet[0].jeux}}<br><br>
+      {{project.interet[0].sport}}<br>
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    Projet POO3<br>
+    Lucas SAUVAGE<br>
+    SI3 - Année 2014-1025<br>
+  </p>
+</footer>
+</body>
+</html>
